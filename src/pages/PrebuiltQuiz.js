@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import _ from 'underscore';
 import { VelocityComponent, VelocityTransitionGroup, velocityHelpers } from 'velocity-react';
 
 export default class PrebuiltQuiz extends React.Component {
@@ -147,13 +148,14 @@ export default class PrebuiltQuiz extends React.Component {
     if (index === this.state.questions.length) {
       this.handleEndQuiz();
     } else {
+      var shuffledAnswers = _.shuffle(this.state.answers.concat(questions[index].correct, questions[index].wrong1, questions[index].wrong2, questions[index].wrong3));
       this.setState({
         name: questions[index].name,
         correct: questions[index].correct,
         wrong1: questions[index].wrong1,
         wrong2: questions[index].wrong2,
         wrong3: questions[index].wrong3,
-        answers: this.state.answers.concat(questions[index].correct, questions[index].wrong1, questions[index].wrong2, questions[index].wrong3)
+        answers: shuffledAnswers
       });
     }
   }
