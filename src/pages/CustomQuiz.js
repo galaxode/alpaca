@@ -139,9 +139,9 @@ export default class CustomQuiz extends React.Component {
 
               <form className="form-customquiz customquiz">
                 <div className="form-group row">
-                  <label className="col-xs-4 col-form-label" htmlFor="testName">Test Name</label>
+                  <label className="col-xs-4 col-form-label" htmlFor="testName">Quiz Name</label>
                   <div className="col-xs-8">
-                    <input name="testName" type="text" className="form-control" placeholder="Enter the Name of this Test" onChange={this.handleTestName.bind(this)}></input>
+                    <input name="testName" type="text" className="form-control" placeholder="Enter the Name of this Quiz" onChange={this.handleTestName.bind(this)}></input>
                   </div>
                 </div>
 
