@@ -1,5 +1,11 @@
 var Sequelize = require('sequelize');
-var db = new Sequelize('crashcourse', 'b8e49f2d01a71a', 'ed74871a');
+
+// ** Credentials for dev environment **
+var db = new Sequelize('crashcourse', 'root', '');
+
+// ** Credentials for deployment **
+// var db = new Sequelize('crashcourse', 'root', '');
+// mysql://b8e49f2d01a71a:ed74871a@us-cdbr-iron-east-03.cleardb.net/heroku_b6ba00aa71eaf7c?reconnect=true
 
 var User = db.define('User', {
   username: Sequelize.STRING,
