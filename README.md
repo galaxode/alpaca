@@ -1,6 +1,6 @@
-# Project Name
+# CrashCourse
 
-> Crash-Course
+> CrashCourse is a web app for creating and taking custom, timed quizzes.  Test yourself or your friends on any subject matter you choose, but be sure to make a choice before the answer blocks crash to the ground!
 
 ## Team
 
