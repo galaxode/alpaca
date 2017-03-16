@@ -34,11 +34,12 @@ export default class Nav extends React.Component {
           </div>
           <div className={"navbar-collapse " + navClass} id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav navbar-right">
+              <li><Link to="/prebuiltQuiz">Take Quiz</Link></li>
+              <li><Link to="/customQuiz">Create Quiz</Link></li>
               <li><Link to="/settings" onClick={this.toggleCollapse.bind(this)}>Settings</Link></li>
-              <li><Link to="/prebuiltQuiz">PreBuilt Quiz</Link></li>
-              <li><Link to="/customQuiz">Custom Quiz</Link></li>
               <li><Link to="/login">Log In</Link></li>
               <li><Link to="/signup">Sign Up</Link></li>
+
             </ul>
           </div>
         </div>
